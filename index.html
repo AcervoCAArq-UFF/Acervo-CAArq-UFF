@@ -46,7 +46,7 @@
             background-color: transparent;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Centraliza os ícones e o texto */
+            align-items: flex-start; /* Alinha o texto à margem esquerda */
             border: none;
             width: 200px; /* Largura fixada para a barra lateral */
         }
@@ -55,17 +55,18 @@
             font-size: 16px;
             font-weight: bold;
             color: #333;
-            text-align: center;
+            text-align: left; /* Alinha o texto à margem esquerda */
+            width: 100%;
         }
         .sidebar a {
             margin: 10px 0;
             display: flex;
-            flex-direction: column;
             align-items: center;
         }
         .sidebar img {
             width: 24px;
             height: 24px;
+            margin-right: 10px; /* Espaçamento entre o ícone e o texto */
             transition: transform 0.3s;
         }
         .sidebar img:hover {
@@ -73,8 +74,9 @@
         }
         .sidebar .link-important {
             margin-top: 10px;
-            text-align: center;
+            text-align: left; /* Alinha o texto à margem esquerda */
             font-size: 16px;
+            width: 100%;
         }
         @media (max-width: 768px) {
             .container {
@@ -108,13 +110,13 @@
     <div class="sidebar">
         <h2>Redes Sociais<br>CAArq UFF</h2>
         <a href="https://www.instagram.com/caarquff/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">Instagram
         </a>
         <a href="https://wa.me/5511999999999" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">WhatsApp
         </a>
         <a href="https://www.youtube.com/@caarquff" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">YouTube
         </a>
         <div class="link-important">
             <h2>Link Importante</h2>
