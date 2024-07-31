@@ -62,6 +62,36 @@
         .social-menu img:hover {
             transform: scale(1.2);
         }
+        .important-links {
+            position: fixed;
+            left: 0;
+            top: 440px; /* Ajuste a posição abaixo das redes sociais */
+            width: 120px;
+            text-align: center;
+            padding: 10px;
+        }
+        .important-links h3 {
+            margin: 0 0 10px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #333;
+        }
+        .important-links a {
+            display: block;
+            margin: 5px 0;
+            color: #007ee5;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .important-links a:hover {
+            text-decoration: underline;
+        }
+        .important-links img {
+            width: 20px; /* Tamanho do ícone de importante */
+            height: 20px; /* Mantém a proporção do ícone */
+            vertical-align: middle;
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
@@ -73,6 +103,12 @@
         </a>
         <a href="https://wa.me/5511999999999" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+        </a>
+    </div>
+    <div class="important-links">
+        <h3>Link Importante</h3>
+        <a href="https://www.planalto.gov.br/ccivil_03/leis/l8159.htm" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Important.svg" alt="Importante"> Lei 8.159/91
         </a>
     </div>
     <div class="container">
