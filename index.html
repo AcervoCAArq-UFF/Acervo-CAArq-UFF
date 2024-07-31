@@ -46,7 +46,7 @@
             background-color: transparent;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: center; /* Centraliza os ícones e o texto */
             border: none;
             width: 200px; /* Largura fixada para a barra lateral */
         }
@@ -55,10 +55,12 @@
             font-size: 16px;
             font-weight: bold;
             color: #333;
+            text-align: center;
         }
         .sidebar a {
             margin: 10px 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
         }
         .sidebar img {
@@ -68,6 +70,11 @@
         }
         .sidebar img:hover {
             transform: scale(1.2);
+        }
+        .sidebar .link-important {
+            margin-top: 10px;
+            text-align: center;
+            font-size: 16px;
         }
         @media (max-width: 768px) {
             .container {
@@ -109,8 +116,10 @@
         <a href="https://www.youtube.com/@caarquff" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
         </a>
-        <h2>Link Importante</h2>
-        <a href="https://www.planalto.gov.br/ccivil_03/leis/l8159.htm" target="_blank">Lei 8.159/91</a>
+        <div class="link-important">
+            <h2>Link Importante</h2>
+            <a href="https://www.planalto.gov.br/ccivil_03/leis/l8159.htm" target="_blank">Lei 8.159/91</a>
+        </div>
     </div>
     <div class="container">
         <h1>Acervo CAArq UFF</h1>
