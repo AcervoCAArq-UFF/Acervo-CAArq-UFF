@@ -42,35 +42,35 @@
             position: fixed;
             left: 0;
             padding: 10px;
-            background-color: #fff; /* Para contraste com o fundo */
-            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+            background-color: transparent; /* Removido fundo branco */
+            box-shadow: none; /* Removido a sombra */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: none; /* Removido borda */
         }
         .social-menu {
             top: 320px;
-            width: 120px;
+            width: 100%;
             text-align: center;
+            gap: 10px;
+            padding: 10px 0;
         }
         .important-links {
-            top: 485px;
-            width: 120px;
+            bottom: 0;
+            width: 100%;
             text-align: center;
+            padding: 10px 0;
         }
-        .social-menu h2, .important-links h2 {
+        .important-links h2 {
             margin: 0;
             font-size: 16px;
             font-weight: bold;
             color: #333;
         }
-        .social-menu a, .important-links a {
-            display: block;
-            margin: 5px 0;
-            color: #007ee5;
-            text-decoration: none;
-            font-size: 14px;
-        }
         .social-menu img {
-            width: 20px; /* Tamanho reduzido dos ícones */
-            height: 20px;
+            width: 24px; /* Tamanho reduzido dos ícones */
+            height: 24px;
             transition: transform 0.3s;
         }
         .social-menu img:hover {
@@ -78,20 +78,15 @@
         }
         @media (max-width: 768px) {
             .container {
-                padding: 20px;
-            }
-            .social-menu, .important-links {
-                position: static;
-                width: auto;
-                text-align: center;
-                box-shadow: none;
                 padding: 10px;
             }
             .social-menu {
-                margin-bottom: 20px;
+                position: static;
+                padding: 10px 0;
             }
             .important-links {
-                margin-bottom: 20px;
+                position: static;
+                padding: 10px 0;
             }
             .social-menu img {
                 width: 30px; /* Ajuste o tamanho dos ícones para telas menores */
@@ -102,8 +97,13 @@
 </head>
 <body>
     <img src="https://github.com/AcervoCAArq-UFF/Acervo-CAArq-UFF/blob/main/archive-1850170_1280.jpg?raw=true" alt="Banner do Acervo" class="banner">
+    <div class="container">
+        <h1>Acervo CAArq UFF</h1>
+        <p>Escolha uma opção abaixo:</p>
+        <a href="https://www.dropbox.com/scl/fo/1kivvo1blgdp9ctz9qefv/ALLlyJ3-p4Jsv27WgBCf-k4?rlkey=ewyvvqawd7sjnbkc0z82mfk2u&st=nx7lg8lf&dl=0" class="link-button">Acessar o Acervo</a>
+        <a href="https://www.dropbox.com/request/68cZmodFGbuVqeCoF5Lh" class="link-button">Enviar Arquivo</a>
+    </div>
     <div class="social-menu">
-        <h2>Redes Sociais CAArq UFF</h2>
         <a href="https://www.instagram.com/caarquff/" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
         </a>
@@ -119,12 +119,6 @@
         <a href="https://www.planalto.gov.br/ccivil_03/leis/l8159.htm" target="_blank">
             Lei 8.159/91
         </a>
-    </div>
-    <div class="container">
-        <h1>Acervo CAArq UFF</h1>
-        <p>Escolha uma opção abaixo:</p>
-        <a href="https://www.dropbox.com/scl/fo/1kivvo1blgdp9ctz9qefv/ALLlyJ3-p4Jsv27WgBCf-k4?rlkey=ewyvvqawd7sjnbkc0z82mfk2u&st=nx7lg8lf&dl=0" class="link-button">Acessar o Acervo</a>
-        <a href="https://www.dropbox.com/request/68cZmodFGbuVqeCoF5Lh" class="link-button">Enviar Arquivo</a>
     </div>
 </body>
 </html>
