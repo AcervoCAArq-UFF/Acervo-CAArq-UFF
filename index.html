@@ -36,17 +36,9 @@
         }
         .social-menu {
             position: fixed;
-            top: 50%;
+            top: 320px; /* Ajuste a posição para logo abaixo do banner */
             left: 10px;
-            transform: translateY(-50%);
-            text-align: center;
             z-index: 1000;
-        }
-        .social-menu h2 {
-            margin: 0;
-            font-size: 18px;
-            color: #333;
-            font-weight: bold;
         }
         .social-menu a {
             display: block;
@@ -55,6 +47,10 @@
         .social-menu img {
             width: 24px;
             height: 24px;
+            transition: transform 0.3s;
+        }
+        .social-menu img:hover {
+            transform: scale(1.2);
         }
     </style>
 </head>
@@ -67,7 +63,6 @@
         <a href="https://www.dropbox.com/request/68cZmodFGbuVqeCoF5Lh" class="link-button">Enviar Arquivo</a>
     </div>
     <div class="social-menu">
-        <h2>Siga nossas redes sociais</h2>
         <a href="https://www.instagram.com/seu_perfil" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
         </a>
