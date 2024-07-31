@@ -13,6 +13,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            box-sizing: border-box;
         }
         .banner {
             width: 100%;
@@ -20,7 +21,7 @@
             object-fit: cover;
         }
         .container {
-            padding: 50px;
+            padding: 20px;
             text-align: center;
             flex: 1;
         }
@@ -37,51 +38,65 @@
         .link-button:hover {
             background-color: #005bb5;
         }
-        .social-menu {
+        .social-menu, .important-links {
             position: fixed;
             left: 0;
-            top: 320px; /* Ajuste a posição abaixo do banner */
+            padding: 10px;
+            background-color: #fff; /* Para contraste com o fundo */
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para destacar */
+        }
+        .social-menu {
+            top: 320px;
             width: 120px;
             text-align: center;
-            padding: 10px;
         }
-        .social-menu h2 {
-            margin: 0 0 10px;
+        .important-links {
+            top: 485px;
+            width: 120px;
+            text-align: center;
+        }
+        .social-menu h2, .important-links h2 {
+            margin: 0;
             font-size: 16px;
+            font-weight: bold;
             color: #333;
         }
-        .social-menu a {
+        .social-menu a, .important-links a {
             display: block;
             margin: 5px 0;
+            color: #007ee5;
+            text-decoration: none;
+            font-size: 14px;
         }
         .social-menu img {
-            width: 25px; /* Tamanho dos ícones */
-            height: 25px; /* Mantém a proporção dos ícones */
+            width: 20px; /* Tamanho reduzido dos ícones */
+            height: 20px;
             transition: transform 0.3s;
         }
         .social-menu img:hover {
             transform: scale(1.2);
         }
-        .important-links {
-            position: fixed;
-            left: 0;
-            top: 485px; /* Ajuste a posição abaixo das redes sociais */
-            width: 120px;
-            text-align: center;
-            padding: 10px;
-        }
-        .important-links h2 {
-            margin: 0;
-            font-size: 16px; /* Igual ao tamanho do título das redes sociais */
-            font-weight: bold;
-            color: #333;
-        }
-        .important-links a {
-            display: block;
-            margin: 5px 0;
-            color: #007ee5;
-            text-decoration: none;
-            font-size: 14px; /* Igual ao tamanho do texto das redes sociais */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            .social-menu, .important-links {
+                position: static;
+                width: auto;
+                text-align: center;
+                box-shadow: none;
+                padding: 10px;
+            }
+            .social-menu {
+                margin-bottom: 20px;
+            }
+            .important-links {
+                margin-bottom: 20px;
+            }
+            .social-menu img {
+                width: 30px; /* Ajuste o tamanho dos ícones para telas menores */
+                height: 30px;
+            }
         }
     </style>
 </head>
@@ -92,7 +107,7 @@
         <a href="https://www.instagram.com/caarquff/" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
         </a>
-        <a href="https://www.whatsapp.com/channel/0029VaKdhUR2975Atjspwo06" target="_blank">
+        <a href="https://wa.me/5511999999999" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
         </a>
         <a href="https://www.youtube.com/@caarquff" target="_blank">
