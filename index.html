@@ -41,46 +41,30 @@
         .link-button:hover {
             background-color: #005bb5;
         }
-        .sidebar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 200px;
-            height: 100%;
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
             background-color: #007ee5;
             color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
         }
-        .sidebar p {
-            font-weight: bold;
-            margin-top: 20px;
-        }
-        .sidebar img {
+        .header img {
             width: 50px;
-            margin: 10px;
-            transition: transform 0.3s;
+            margin-right: 20px;
         }
-        .sidebar img:hover {
-            transform: scale(1.1);
+        .header h1 {
+            margin: 0;
         }
     </style>
 </head>
 <body>
-    <div class="sidebar">
-        <p>Siga as nossas redes sociais</p>
-        <a href="https://www.instagram.com/caarquff/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
-        </a>
-        <a href="https://www.whatsapp.com/channel/0029VaKdhUR2975Atjspwo06" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Grupo">
-        </a>
-    </div>
     <div class="container">
+        <div class="header">
+            <img src="https://github.com/AcervoCAArq-UFF/Acervo-CAArq-UFF/blob/main/247483373_395185878776791_7242234296510447426_n.jpg?raw=true" alt="Logo do Acervo">
+            <h1>Acervo CAArq UFF</h1>
+        </div>
         <img src="https://github.com/AcervoCAArq-UFF/Acervo-CAArq-UFF/blob/main/archive-1850170_1280.jpg?raw=true" alt="Banner do Acervo" class="banner">
-        <h1>Acervo CAArq UFF</h1>
         <p>Escolha uma opção abaixo:</p>
         <a href="https://www.dropbox.com/scl/fo/1kivvo1blgdp9ctz9qefv/ALLlyJ3-p4Jsv27WgBCf-k4?rlkey=ewyvvqawd7sjnbkc0z82mfk2u&st=nx7lg8lf&dl=0" class="link-button">Acessar o Acervo</a>
         <a href="https://www.dropbox.com/request/68cZmodFGbuVqeCoF5Lh" class="link-button">Enviar Arquivo</a>
