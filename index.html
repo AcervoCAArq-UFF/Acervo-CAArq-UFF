@@ -7,13 +7,16 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
         .container {
             padding: 50px;
+            text-align: center;
+            flex: 1;
         }
         .link-button {
             display: inline-block;
@@ -34,16 +37,29 @@
             object-fit: cover;
         }
         .social-menu {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            gap: 10px; /* Espaçamento entre os ícones */
+            position: fixed;
+            left: 0;
+            top: 20px;
+            width: 120px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            z-index: 1000;
+        }
+        .social-menu h2 {
+            margin: 0 0 10px;
+            font-size: 14px;
+            color: #333;
         }
         .social-menu a {
             display: block;
+            margin: 10px 0;
         }
         .social-menu img {
-            width: 25px; /* Tamanho reduzido dos ícones */
+            width: 25px; /* Tamanho dos ícones */
             height: 25px; /* Mantém a proporção dos ícones */
             transition: transform 0.3s;
         }
@@ -56,8 +72,8 @@
     </style>
 </head>
 <body>
-    <img src="https://github.com/AcervoCAArq-UFF/Acervo-CAArq-UFF/blob/main/archive-1850170_1280.jpg?raw=true" alt="Banner do Acervo" class="banner">
     <div class="social-menu">
+        <h2>Redes Sociais CAArq UFF</h2>
         <a href="https://www.instagram.com/caarquff/" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
         </a>
@@ -66,6 +82,7 @@
         </a>
     </div>
     <div class="container">
+        <img src="https://github.com/AcervoCAArq-UFF/Acervo-CAArq-UFF/blob/main/archive-1850170_1280.jpg?raw=true" alt="Banner do Acervo" class="banner">
         <div class="header-center">
             <h1>Acervo CAArq UFF</h1>
         </div>
