@@ -39,6 +39,7 @@
             top: 320px; /* Ajuste a posição para logo abaixo do banner */
             left: 10px;
             display: flex;
+            flex-direction: column;
             gap: 10px; /* Espaçamento entre os ícones */
             z-index: 1000;
         }
@@ -53,20 +54,28 @@
         .social-menu img:hover {
             transform: scale(1.2);
         }
-        .description {
-            padding: 20px;
-            background-color: transparent; /* Remove o fundo branco */
-            border: none; /* Remove a borda */
-            box-shadow: none; /* Remove a sombra */
-            margin-top: 20px;
-            text-align: center;
+        .header-left {
+            position: fixed;
+            top: 320px; /* Alinha o topo com os ícones das redes sociais */
+            left: 50px; /* Margem esquerda para o texto e a imagem */
+            display: flex;
+            align-items: center;
+            gap: 10px; /* Espaçamento entre o texto e a imagem */
+            z-index: 1000;
+        }
+        .header-left img {
+            width: 15px; /* Tamanho da imagem */
+            height: 15px;
         }
     </style>
 </head>
 <body>
     <img src="https://github.com/AcervoCAArq-UFF/Acervo-CAArq-UFF/blob/main/archive-1850170_1280.jpg?raw=true" alt="Banner do Acervo" class="banner">
     <div class="container">
-        <h1>Acervo CAArq UFF</h1>
+        <div class="header-left">
+            <img src="https://github.com/AcervoCAArq-UFF/Acervo-CAArq-UFF/blob/main/247483373_395185878776791_7242234296510447426_n.jpg?raw=true" alt="Logo do Acervo">
+            <h1>Acervo CAArq UFF</h1>
+        </div>
         <div class="description">
             <p>Esta página foi criada com o intuito de reunir livros e artigos em um só lugar, facilitando o acesso e compartilhamento de material entre os alunos de Arquivologia da UFF. Ao contribuir com o seu material e acessar o acervo, todos nós colaboramos para criar um acervo dedicado à nossa área de estudo. Juntos, podemos construir um recurso valioso para todos os envolvidos.</p>
         </div>
